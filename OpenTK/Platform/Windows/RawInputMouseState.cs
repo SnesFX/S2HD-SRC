@@ -1,0 +1,46 @@
+﻿using System;
+
+namespace OpenTK.Platform.Windows
+{
+	// Token: 0x020000BA RID: 186
+	[Flags]
+	internal enum RawInputMouseState : ushort
+	{
+		// Token: 0x040004AE RID: 1198
+		LEFT_BUTTON_DOWN = 1,
+		// Token: 0x040004AF RID: 1199
+		LEFT_BUTTON_UP = 2,
+		// Token: 0x040004B0 RID: 1200
+		RIGHT_BUTTON_DOWN = 4,
+		// Token: 0x040004B1 RID: 1201
+		RIGHT_BUTTON_UP = 8,
+		// Token: 0x040004B2 RID: 1202
+		MIDDLE_BUTTON_DOWN = 16,
+		// Token: 0x040004B3 RID: 1203
+		MIDDLE_BUTTON_UP = 32,
+		// Token: 0x040004B4 RID: 1204
+		BUTTON_1_DOWN = 1,
+		// Token: 0x040004B5 RID: 1205
+		BUTTON_1_UP = 2,
+		// Token: 0x040004B6 RID: 1206
+		BUTTON_2_DOWN = 4,
+		// Token: 0x040004B7 RID: 1207
+		BUTTON_2_UP = 8,
+		// Token: 0x040004B8 RID: 1208
+		BUTTON_3_DOWN = 16,
+		// Token: 0x040004B9 RID: 1209
+		BUTTON_3_UP = 32,
+		// Token: 0x040004BA RID: 1210
+		BUTTON_4_DOWN = 64,
+		// Token: 0x040004BB RID: 1211
+		BUTTON_4_UP = 128,
+		// Token: 0x040004BC RID: 1212
+		BUTTON_5_DOWN = 256,
+		// Token: 0x040004BD RID: 1213
+		BUTTON_5_UP = 512,
+		// Token: 0x040004BE RID: 1214
+		WHEEL = 1024,
+		// Token: 0x040004BF RID: 1215
+		HWHEEL = 2048
+	}
+}

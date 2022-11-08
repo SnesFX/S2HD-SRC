@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace OpenTK.Platform.Windows
+{
+	// Token: 0x020000C3 RID: 195
+	internal enum ShowWindowCommand
+	{
+		// Token: 0x0400066D RID: 1645
+		HIDE,
+		// Token: 0x0400066E RID: 1646
+		SHOWNORMAL,
+		// Token: 0x0400066F RID: 1647
+		NORMAL = 1,
+		// Token: 0x04000670 RID: 1648
+		SHOWMINIMIZED,
+		// Token: 0x04000671 RID: 1649
+		SHOWMAXIMIZED,
+		// Token: 0x04000672 RID: 1650
+		MAXIMIZE = 3,
+		// Token: 0x04000673 RID: 1651
+		SHOWNOACTIVATE,
+		// Token: 0x04000674 RID: 1652
+		SHOW,
+		// Token: 0x04000675 RID: 1653
+		MINIMIZE,
+		// Token: 0x04000676 RID: 1654
+		SHOWMINNOACTIVE,
+		// Token: 0x04000677 RID: 1655
+		SHOWNA,
+		// Token: 0x04000678 RID: 1656
+		RESTORE,
+		// Token: 0x04000679 RID: 1657
+		SHOWDEFAULT,
+		// Token: 0x0400067A RID: 1658
+		FORCEMINIMIZE
+	}
+}

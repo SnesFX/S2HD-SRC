@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace OpenTK.Platform.Egl
+{
+	// Token: 0x02000074 RID: 116
+	internal enum ErrorCode
+	{
+		// Token: 0x040001E5 RID: 485
+		SUCCESS = 12288,
+		// Token: 0x040001E6 RID: 486
+		NOT_INITIALIZED,
+		// Token: 0x040001E7 RID: 487
+		BAD_ACCESS,
+		// Token: 0x040001E8 RID: 488
+		BAD_ALLOC,
+		// Token: 0x040001E9 RID: 489
+		BAD_ATTRIBUTE,
+		// Token: 0x040001EA RID: 490
+		BAD_CONFIG,
+		// Token: 0x040001EB RID: 491
+		BAD_CONTEXT,
+		// Token: 0x040001EC RID: 492
+		BAD_CURRENT_SURFACE,
+		// Token: 0x040001ED RID: 493
+		BAD_DISPLAY,
+		// Token: 0x040001EE RID: 494
+		BAD_MATCH,
+		// Token: 0x040001EF RID: 495
+		BAD_NATIVE_PIXMAP,
+		// Token: 0x040001F0 RID: 496
+		BAD_NATIVE_WINDOW,
+		// Token: 0x040001F1 RID: 497
+		BAD_PARAMETER,
+		// Token: 0x040001F2 RID: 498
+		BAD_SURFACE
+	}
+}

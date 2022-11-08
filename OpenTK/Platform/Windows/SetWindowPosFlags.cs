@@ -1,0 +1,40 @@
+﻿using System;
+
+namespace OpenTK.Platform.Windows
+{
+	// Token: 0x02000091 RID: 145
+	[Flags]
+	internal enum SetWindowPosFlags
+	{
+		// Token: 0x04000390 RID: 912
+		NOSIZE = 1,
+		// Token: 0x04000391 RID: 913
+		NOMOVE = 2,
+		// Token: 0x04000392 RID: 914
+		NOZORDER = 4,
+		// Token: 0x04000393 RID: 915
+		NOREDRAW = 8,
+		// Token: 0x04000394 RID: 916
+		NOACTIVATE = 16,
+		// Token: 0x04000395 RID: 917
+		FRAMECHANGED = 32,
+		// Token: 0x04000396 RID: 918
+		SHOWWINDOW = 64,
+		// Token: 0x04000397 RID: 919
+		HIDEWINDOW = 128,
+		// Token: 0x04000398 RID: 920
+		NOCOPYBITS = 256,
+		// Token: 0x04000399 RID: 921
+		NOOWNERZORDER = 512,
+		// Token: 0x0400039A RID: 922
+		NOSENDCHANGING = 1024,
+		// Token: 0x0400039B RID: 923
+		DRAWFRAME = 32,
+		// Token: 0x0400039C RID: 924
+		NOREPOSITION = 512,
+		// Token: 0x0400039D RID: 925
+		DEFERERASE = 8192,
+		// Token: 0x0400039E RID: 926
+		ASYNCWINDOWPOS = 16384
+	}
+}

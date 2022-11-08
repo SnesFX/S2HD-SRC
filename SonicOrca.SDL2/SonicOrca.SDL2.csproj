@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5E3039-9E5E-44CB-A990-D56D7EF840D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SonicOrca.SDL2</RootNamespace>
+    <AssemblyName>SonicOrca.SDL2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GLBuffer.cs" />
+    <Compile Include="GLFramebuffer.cs" />
+    <Compile Include="GLGraphicsContext.cs" />
+    <Compile Include="GLShader.cs" />
+    <Compile Include="GLShaderProgram.cs" />
+    <Compile Include="GLTexture.cs" />
+    <Compile Include="GLVertexArray.cs" />
+    <Compile Include="GLVertexBuffer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDL2AudioContext.cs" />
+    <Compile Include="SDL2Exception.cs" />
+    <Compile Include="SDL2InputContext.cs" />
+    <Compile Include="SDL2Platform.cs" />
+    <Compile Include="SDL2WindowContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840DB}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenTK\OpenTK.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D2}</Project>
+      <Name>OpenTK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDL2-CS\SDL2-CS.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D4}</Project>
+      <Name>SDL2-CS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.Common\SonicOrca.Common.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D5}</Project>
+      <Name>SonicOrca.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.Resources\SonicOrca.Resources.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D8}</Project>
+      <Name>SonicOrca.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca\SonicOrca.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D6}</Project>
+      <Name>SonicOrca</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

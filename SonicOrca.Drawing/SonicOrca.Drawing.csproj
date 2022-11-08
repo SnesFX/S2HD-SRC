@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5E3039-9E5E-44CB-A990-D56D7EF840D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SonicOrca</RootNamespace>
+    <AssemblyName>SonicOrca.Drawing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing\DefaultRendererFactory.cs" />
+    <Compile Include="Drawing\GreenList.cs" />
+    <Compile Include="Drawing\LevelRendering\IRenderingOptions.cs" />
+    <Compile Include="Drawing\LevelRendering\LevelRenderer.cs" />
+    <Compile Include="Drawing\LevelRendering\RenderingLayer.cs" />
+    <Compile Include="Drawing\LevelRendering\RenderingOptions.cs" />
+    <Compile Include="Drawing\LevelRendering\RenderingTileList.cs" />
+    <Compile Include="Drawing\LevelRendering\RenderingTiler.cs" />
+    <Compile Include="Drawing\LevelRendering\TileRenderInfo.cs" />
+    <Compile Include="Drawing\Renderers\CharacterRenderer.cs" />
+    <Compile Include="Drawing\Renderers\ClassicFadeTransitionRenderer.cs" />
+    <Compile Include="Drawing\Renderers\FilterRenderer.cs" />
+    <Compile Include="Drawing\Renderers\FontRenderer.cs" />
+    <Compile Include="Drawing\Renderers\GaussianBlurRenderer.cs" />
+    <Compile Include="Drawing\Renderers\HeatRenderer.cs" />
+    <Compile Include="Drawing\Renderers\MaskRenderer.cs" />
+    <Compile Include="Drawing\Renderers\NonLayerRenderer.cs" />
+    <Compile Include="Drawing\Renderers\ObjectRenderer.cs" />
+    <Compile Include="Drawing\Renderers\RenderingHelpers.cs" />
+    <Compile Include="Drawing\Renderers\ScreenshotRenderer.cs" />
+    <Compile Include="Drawing\Renderers\ShadowRenderer.cs" />
+    <Compile Include="Drawing\Renderers\SimpleRenderer.cs" />
+    <Compile Include="Drawing\Renderers\TileRenderer.cs" />
+    <Compile Include="Drawing\Renderers\WaterfallRenderer.cs" />
+    <Compile Include="Drawing\Renderers\WaterRenderer.cs" />
+    <Compile Include="Drawing\TheRenderer.cs" />
+    <Compile Include="Extensions\GraphicsExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840DB}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenTK\OpenTK.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D2}</Project>
+      <Name>OpenTK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.Resources\SonicOrca.Resources.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D8}</Project>
+      <Name>SonicOrca.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca\SonicOrca.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D6}</Project>
+      <Name>SonicOrca</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

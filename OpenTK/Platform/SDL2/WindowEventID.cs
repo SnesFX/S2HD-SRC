@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace OpenTK.Platform.SDL2
+{
+	// Token: 0x020005BF RID: 1471
+	internal enum WindowEventID : byte
+	{
+		// Token: 0x040054C5 RID: 21701
+		NONE,
+		// Token: 0x040054C6 RID: 21702
+		SHOWN,
+		// Token: 0x040054C7 RID: 21703
+		HIDDEN,
+		// Token: 0x040054C8 RID: 21704
+		EXPOSED,
+		// Token: 0x040054C9 RID: 21705
+		MOVED,
+		// Token: 0x040054CA RID: 21706
+		RESIZED,
+		// Token: 0x040054CB RID: 21707
+		SIZE_CHANGED,
+		// Token: 0x040054CC RID: 21708
+		MINIMIZED,
+		// Token: 0x040054CD RID: 21709
+		MAXIMIZED,
+		// Token: 0x040054CE RID: 21710
+		RESTORED,
+		// Token: 0x040054CF RID: 21711
+		ENTER,
+		// Token: 0x040054D0 RID: 21712
+		LEAVE,
+		// Token: 0x040054D1 RID: 21713
+		FOCUS_GAINED,
+		// Token: 0x040054D2 RID: 21714
+		FOCUS_LOST,
+		// Token: 0x040054D3 RID: 21715
+		CLOSE
+	}
+}

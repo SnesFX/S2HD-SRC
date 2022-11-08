@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5E3039-9E5E-44CB-A990-D56D7EF840CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accord</RootNamespace>
+    <AssemblyName>Accord</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ByteRange.cs" />
+    <Compile Include="cast.2.cs" />
+    <Compile Include="cast.cs" />
+    <Compile Include="Collections\BinaryNode.cs" />
+    <Compile Include="Collections\BinaryTraversalMethod.cs" />
+    <Compile Include="Collections\BinaryTree.cs" />
+    <Compile Include="Collections\KeyValuePairComparer.cs" />
+    <Compile Include="Collections\PriorityOrder.cs" />
+    <Compile Include="Collections\PriorityQueue.cs" />
+    <Compile Include="Collections\PriorityQueueNode.cs" />
+    <Compile Include="Collections\ReadOnlyKeyedCollection.cs" />
+    <Compile Include="Collections\RedBlackTree.2.cs" />
+    <Compile Include="Collections\RedBlackTree.cs" />
+    <Compile Include="Collections\RedBlackTreeDictionary.cs" />
+    <Compile Include="Collections\RedBlackTreeNode.2.cs" />
+    <Compile Include="Collections\RedBlackTreeNode.cs" />
+    <Compile Include="Collections\RedBlackTreeNodeType.cs" />
+    <Compile Include="Collections\TraversalMethod.cs" />
+    <Compile Include="Collections\Tree.cs" />
+    <Compile Include="Collections\TreeNode.cs" />
+    <Compile Include="Collections\TreeTraversal.cs" />
+    <Compile Include="Collections\TwoWayDictionary.cs" />
+    <Compile Include="CommunicationBufferEventArgs.cs" />
+    <Compile Include="Compat\Dummy.cs" />
+    <Compile Include="ConnectionFailedException.cs" />
+    <Compile Include="ConnectionLostException.cs" />
+    <Compile Include="ConvergenceException.cs" />
+    <Compile Include="DeviceBusyException.cs" />
+    <Compile Include="DeviceErrorException.cs" />
+    <Compile Include="Diagnostics\Debug.cs" />
+    <Compile Include="DimensionMismatchException.cs" />
+    <Compile Include="DoublePoint.cs" />
+    <Compile Include="DoubleRange.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="IntegerAttribute.cs" />
+    <Compile Include="InterlockedEx.cs" />
+    <Compile Include="IntPoint.cs" />
+    <Compile Include="IntRange.cs" />
+    <Compile Include="IO\Serializer.cs" />
+    <Compile Include="IO\SerializerCompression.cs" />
+    <Compile Include="IRange.cs" />
+    <Compile Include="MachineLearning\IBinaryClassifier.2.cs" />
+    <Compile Include="MachineLearning\IBinaryClassifier.cs" />
+    <Compile Include="MachineLearning\IBinaryLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IBinaryScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IClassifier.2.cs" />
+    <Compile Include="MachineLearning\IClassifier.cs" />
+    <Compile Include="MachineLearning\IGenerative.cs" />
+    <Compile Include="MachineLearning\ILikelihoodTagger.cs" />
+    <Compile Include="MachineLearning\IMulticlassClassifier.2.cs" />
+    <Compile Include="MachineLearning\IMulticlassClassifier.3.cs" />
+    <Compile Include="MachineLearning\IMulticlassClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassLikelihoodClassifier.2.cs" />
+    <Compile Include="MachineLearning\IMulticlassLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassLikelihoodClassifierBase.cs" />
+    <Compile Include="MachineLearning\IMulticlassOutLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassOutScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassRefLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassRefScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassScoreClassifier.2.cs" />
+    <Compile Include="MachineLearning\IMulticlassScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IMulticlassScoreClassifierBase.cs" />
+    <Compile Include="MachineLearning\IMultilabelClassifier.2.cs" />
+    <Compile Include="MachineLearning\IMultilabelClassifier.3.cs" />
+    <Compile Include="MachineLearning\IMultilabelClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelLikelihoodClassifier.2.cs" />
+    <Compile Include="MachineLearning\IMultilabelLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelLikelihoodClassifierBase.cs" />
+    <Compile Include="MachineLearning\IMultilabelOutLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelOutScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelRefLikelihoodClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelRefScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelScoreClassifier.2.cs" />
+    <Compile Include="MachineLearning\IMultilabelScoreClassifier.cs" />
+    <Compile Include="MachineLearning\IMultilabelScoreClassifierBase.cs" />
+    <Compile Include="MachineLearning\IMultipleRegression.2.cs" />
+    <Compile Include="MachineLearning\IMultipleRegression.cs" />
+    <Compile Include="MachineLearning\IMultipleTransform.cs" />
+    <Compile Include="MachineLearning\IParallel.cs" />
+    <Compile Include="MachineLearning\IRegression.2.cs" />
+    <Compile Include="MachineLearning\IRegression.cs" />
+    <Compile Include="MachineLearning\IScoreTagger.cs" />
+    <Compile Include="MachineLearning\ISupportsCancellation.cs" />
+    <Compile Include="MachineLearning\ITagger.cs" />
+    <Compile Include="MachineLearning\ITransform.2.cs" />
+    <Compile Include="MachineLearning\ITransform.3.cs" />
+    <Compile Include="MachineLearning\ITransform.cs" />
+    <Compile Include="Math\Converters\RationalConverter.cs" />
+    <Compile Include="Math\Hyperrectangle.cs" />
+    <Compile Include="Math\Rational.cs" />
+    <Compile Include="Math\Sparse.2.cs" />
+    <Compile Include="Math\Sparse.cs" />
+    <Compile Include="MessageTransferHandler.cs" />
+    <Compile Include="NegativeAttribute.cs" />
+    <Compile Include="NegativeIntegerAttribute.cs" />
+    <Compile Include="NonnegativeAttribute.cs" />
+    <Compile Include="NonnegativeIntegerAttribute.cs" />
+    <Compile Include="NonpositiveAttribute.cs" />
+    <Compile Include="NonPositiveDefiniteMatrixException.cs" />
+    <Compile Include="NonpositiveIntegerAttribute.cs" />
+    <Compile Include="NonSymmetricMatrixException.cs" />
+    <Compile Include="NotConnectedException.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="PolishExpression.cs" />
+    <Compile Include="PositiveAttribute.cs" />
+    <Compile Include="PositiveIntegerAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="RealAttribute.cs" />
+    <Compile Include="SerializationBinderAttribute.cs" />
+    <Compile Include="SingularMatrixException.cs" />
+    <Compile Include="SourceTypeAttribute.cs" />
+    <Compile Include="SystemTools.cs" />
+    <Compile Include="ThreadSafeRandom.cs" />
+    <Compile Include="UnitAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840DB}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

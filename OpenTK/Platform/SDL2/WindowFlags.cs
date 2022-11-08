@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace OpenTK.Platform.SDL2
+{
+	// Token: 0x020005C0 RID: 1472
+	internal enum WindowFlags
+	{
+		// Token: 0x040054D5 RID: 21717
+		Default,
+		// Token: 0x040054D6 RID: 21718
+		FULLSCREEN,
+		// Token: 0x040054D7 RID: 21719
+		OPENGL,
+		// Token: 0x040054D8 RID: 21720
+		SHOWN = 4,
+		// Token: 0x040054D9 RID: 21721
+		HIDDEN = 8,
+		// Token: 0x040054DA RID: 21722
+		BORDERLESS = 16,
+		// Token: 0x040054DB RID: 21723
+		RESIZABLE = 32,
+		// Token: 0x040054DC RID: 21724
+		MINIMIZED = 64,
+		// Token: 0x040054DD RID: 21725
+		MAXIMIZED = 128,
+		// Token: 0x040054DE RID: 21726
+		INPUT_GRABBED = 256,
+		// Token: 0x040054DF RID: 21727
+		INPUT_FOCUS = 512,
+		// Token: 0x040054E0 RID: 21728
+		MOUSE_FOCUS = 1024,
+		// Token: 0x040054E1 RID: 21729
+		FULLSCREEN_DESKTOP = 4097,
+		// Token: 0x040054E2 RID: 21730
+		FOREIGN = 2048,
+		// Token: 0x040054E3 RID: 21731
+		ALLOW_HIGHDPI = 8192
+	}
+}

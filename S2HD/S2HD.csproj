@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5E3039-9E5E-44CB-A990-D56D7EF840D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>S2HD</RootNamespace>
+    <AssemblyName>S2HD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>S2HD.ico</ApplicationIcon>
+    <StartupObject>S2HD.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandLineArguments.cs" />
+    <Compile Include="CreditsGameState.cs" />
+    <Compile Include="DemoGameState.cs" />
+    <Compile Include="DisclaimerGameState.cs" />
+    <Compile Include="EffectEventManager.cs" />
+    <Compile Include="LogosGameState.cs" />
+    <Compile Include="Menu\AudioSliderOptionSetting.cs" />
+    <Compile Include="Menu\ButtonBarItem.cs" />
+    <Compile Include="Menu\ButtonBarUI.cs" />
+    <Compile Include="Menu\GamePadButton.cs" />
+    <Compile Include="Menu\IAudioSliderSetting.cs" />
+    <Compile Include="Menu\IControlResources.cs" />
+    <Compile Include="Menu\IListMenuViewModel.cs" />
+    <Compile Include="Menu\IMenuItem.cs" />
+    <Compile Include="Menu\IMenuViewModel.cs" />
+    <Compile Include="Menu\IMenuViewPresenter.cs" />
+    <Compile Include="Menu\ISetting.cs" />
+    <Compile Include="Menu\ISettingListMenuViewModel.cs" />
+    <Compile Include="Menu\ISettingUIResources.cs" />
+    <Compile Include="Menu\ISpinnerSetting.cs" />
+    <Compile Include="Menu\ListMenuViewModel.cs" />
+    <Compile Include="Menu\ListMenuViewPresenter.cs" />
+    <Compile Include="Menu\MenuItem.cs" />
+    <Compile Include="Menu\MenuTags.cs" />
+    <Compile Include="Menu\MenuViewFactory.cs" />
+    <Compile Include="Menu\MenuViewPresenterFactory.cs" />
+    <Compile Include="Menu\MenuViewPresenterHost.cs" />
+    <Compile Include="Menu\NavigateNextEventArgs.cs" />
+    <Compile Include="Menu\OnOffOptionSetting.cs" />
+    <Compile Include="Menu\OptionsGameState.cs" />
+    <Compile Include="Menu\OptionsMenu.cs" />
+    <Compile Include="Menu\SettingListMenuViewModel.cs" />
+    <Compile Include="Menu\SettingListMenuViewPresenter.cs" />
+    <Compile Include="Menu\SettingUI.cs" />
+    <Compile Include="Menu\SettingUIResources.cs" />
+    <Compile Include="Menu\StandardOptionSetting.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootGameState.cs" />
+    <Compile Include="S2HDSettings.cs" />
+    <Compile Include="SharedRenderers.cs" />
+    <Compile Include="SonicOrca\Core\LevelInfo.cs" />
+    <Compile Include="SonicOrca\Core\Levels.cs" />
+    <Compile Include="SonicOrca\FiniteStateMachine.cs" />
+    <Compile Include="SONICORCA\LEVELS\ARZ\AREA\AquaticRuinZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\CNZ\AREA\CasinoNightZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\CPZ\AREA\ChemicalPlantZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\DEZ\AREA\DeathEggZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\EHZ\AREA\EmeraldHillZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\HTZ\AREA\HillTopZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\MCZ\AREA\MysticCaveZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\MTZ\AREA\MetropolisZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\OOZ\AREA\OilOceanZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\SCZ\AREA\SkyChaseZoneArea.cs" />
+    <Compile Include="SONICORCA\LEVELS\WFZ\AREA\WingFortressZoneArea.cs" />
+    <Compile Include="SonicOrca\Menu\SegaScreen.cs" />
+    <Compile Include="SonicOrca\Menu\SoundtrackScreen.cs" />
+    <Compile Include="SONICORCA\OBJECTS\BUBBLEGENERATOR\BubbleGeneratorInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\BUBBLEGENERATOR\BubbleGeneratorType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\BUBBLE\BubbleInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\BUBBLE\BubbleType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\BUZZER\BuzzerInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\BUZZER\BuzzerType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CAPSULE\CapsuleInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CAPSULE\CapsuleType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\COCONUTS\CoconutsInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\COCONUTS\CoconutsType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZBLOBS\CPZBlobsInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZBLOBS\CPZBlobsType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZBLOCK\CPZBlockInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZBLOCK\CPZBlockType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZCHEMICALFALL\CPZChemicalFallInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZCHEMICALFALL\CPZChemicalFallType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZDOOR\CPZDoorInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZDOOR\CPZDoorType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZPLATFORM\CPZPlatformInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZPLATFORM\CPZPlatformType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZSPEEDBOOSTER\CPZSpeedBoosterInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZSPEEDBOOSTER\CPZSpeedBoosterType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZSPINTUBE\CPZSpinTubeInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZSPINTUBE\CPZSpinTubeType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTRAPDOOR\CPZTrapDoorInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTRAPDOOR\CPZTrapDoorType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTUBECAP\CPZTubeCapInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTUBECAP\CPZTubeCapParticleInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTUBECAP\CPZTubeCapType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTUBESPRING\CPZTubeSpringInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZTUBESPRING\CPZTubeSpringType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZWATERPLATFORM\CPZWaterPlatformInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\CPZWATERPLATFORM\CPZWaterPlatformType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\DRILLEGGMAN\DrillEggmanInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\DRILLEGGMAN\DrillEggmanType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\DUST\DustInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\DUST\DustType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZBLOCK\EHZBlockInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZBLOCK\EHZBlockType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZBRIDGE\EHZBridgeInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZBRIDGE\EHZBridgeType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZBRIDGE\STAKE\EHZBridgeStakeInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZBRIDGE\STAKE\EHZBridgeStakeType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZPLATFORM\EHZPlatformInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZPLATFORM\EHZPlatformType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZTWISTEDPATHWAY\EHZTwistedPathwayInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EHZTWISTEDPATHWAY\EHZTwistedPathwayType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EXPLOSION\BADNIK\BadnikExplosionInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EXPLOSION\BADNIK\BadnikExplosionType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EXPLOSION\BOSS\BossExplosionInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\EXPLOSION\BOSS\BossExplosionType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\FLICKY\FlickyInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\FLICKY\FlickyType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\FORCESPINBALL\ForceSpinballInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\FORCESPINBALL\ForceSpinballType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\GRABBER\GrabberInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\GRABBER\GrabberType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZBLOCK\HTZBlockInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZBLOCK\HTZBlockType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZBREAKABLEPLATFORM\HTZBreakablePlatformInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZBREAKABLEPLATFORM\HTZBreakablePlatformType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZDOOR\DoorDirection.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZDOOR\HTZDoorInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZDOOR\HTZDoorType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZPLATFORM\HTZPlatformInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZPLATFORM\HTZPlatformType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZRISINGBLOCK\HTZRisingBlockInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZRISINGBLOCK\HTZRisingBlockType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZRISINGGROUP\HTZRisingGroupInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZRISINGGROUP\HTZRisingGroupType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZROCK\HTZRockInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZROCK\HTZRockType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZROCK\PARTICLE\HTZRockParticleInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZROCK\PARTICLE\HTZRockParticleType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZSEESAW\HTZSeeSawInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZSEESAW\HTZSeeSawType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZVINELIFT\HTZVineLiftInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZVINELIFT\HTZVineLiftType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZVINELIFT\PILLAR\HTZVineLiftPillarInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\HTZVINELIFT\PILLAR\HTZVineLiftPillarType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\LAVA\LavaInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\LAVA\LavaType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\LAYERSWITCH\LayerSwitchInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\LAYERSWITCH\LayerSwitchType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\LOCKY\LockyInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\LOCKY\LockyType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\MASHER\MasherInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\MASHER\MasherType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\MONITOR\MonitorContents.cs" />
+    <Compile Include="SONICORCA\OBJECTS\MONITOR\MonitorInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\MONITOR\MonitorType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\POCKY\PockyInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\POCKY\PockyType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\POINTS\PointsInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\POINTS\PointsType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\REXON\RexonInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\REXON\RexonType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\RICKY\RickyInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\RICKY\RickyType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\RING\RingInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\RING\RingType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\RING\SPARKLE\RingSparkleInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\RING\SPARKLE\RingSparkleType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SIGNPOST\SignpostInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SIGNPOST\SignpostType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SOL\SolInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SOL\SolType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SONIC\SonicInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SONIC\SonicType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPIKER\SpikerInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPIKER\SpikerType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPIKES\SpikesInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPIKES\SpikesType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPINY\SpinyInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPINY\SpinyType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPRINGBOARD\SpringBoardInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPRINGBOARD\SpringBoardType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPRING\SpringDirection.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPRING\SpringInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SPRING\SpringType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\STARPOST\StarpostInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\STARPOST\StarpostType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SUBMARINEEGGMAN\SubmarineEggmanInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\SUBMARINEEGGMAN\SubmarineEggmanType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\TAILS\TailsInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\TAILS\TailsType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\WATEREGGMAN\WaterEggmanInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\WATEREGGMAN\WaterEggmanType.cs" />
+    <Compile Include="SONICORCA\OBJECTS\WOCKY\WockyInstance.cs" />
+    <Compile Include="SONICORCA\OBJECTS\WOCKY\WockyType.cs" />
+    <Compile Include="SonicOrca\S2HDSonicOrcaGameContext.cs" />
+    <Compile Include="SonicOrca\TitleGameState.cs" />
+    <Compile Include="StoryPlaythroughGameState.cs" />
+    <Compile Include="TeamLogoGameState.cs" />
+    <Compile Include="Title\Background.cs" />
+    <Compile Include="Title\Banner.cs" />
+    <Compile Include="Title\TitleResources.cs" />
+    <Compile Include="Title\UserInterface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840DB}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.Common\SonicOrca.Common.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D5}</Project>
+      <Name>SonicOrca.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.Drawing\SonicOrca.Drawing.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D7}</Project>
+      <Name>SonicOrca.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.Resources\SonicOrca.Resources.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D8}</Project>
+      <Name>SonicOrca.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca.SDL2\SonicOrca.SDL2.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D9}</Project>
+      <Name>SonicOrca.SDL2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SonicOrca\SonicOrca.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840D6}</Project>
+      <Name>SonicOrca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Collections.Immutable\System.Collections.Immutable.csproj">
+      <Project>{5B5E3039-9E5E-44CB-A990-D56D7EF840DA}</Project>
+      <Name>System.Collections.Immutable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
