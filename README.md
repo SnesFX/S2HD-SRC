@@ -2,17 +2,16 @@
  
 - Sonic 2 HD's Source Code
 
-- Still a work in progress. Gotta fix 500+ errors.
+- Not getting worked on due to having 500+ errors.
+
+- You need the assets from the original game to use this.
 
 # Credits
 
-- [SnesFX](https://twitter.com/SnesFX) - Decompiling the game
+- [SnesFX](https://twitter.com/SnesFX) - Decompiling the source using dnSpy
 
 - [Sonic 2 HD Team](https://twitter.com/Sonic2HD) - Making the amazing Fangame called Sonic 2 HD
 
 ## Progress
 
-# 50% done.
-
-
-
+# 0% done.
